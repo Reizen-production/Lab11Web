@@ -107,27 +107,27 @@ sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layou
 <img src=Praktikum11/T3.png>
 
 # PRAKTIKUM 12 - Framework Lanjutan (CRUD)
-- Jalankan XAMPP, buka localhost dan buat sebuah database seperti berikut
+- Jalankan `XAMPP`, buka `localhost` dan buat sebuah database seperti berikut
 <img src=Praktikum12/1.png>
 <img src=Praktikum12/2.png>
 
 ## Step 1 Konfigurasi Database
-- Konfigurasi file .env ke database
+- Konfigurasi file `.env` ke database
 <img src=Praktikum12/3.png>
 
 ## Step 2 Membuat Model
-- Buat Artikel Model untuk memproses data Artikel. Buat file baru pada direktori app/Models dengan nama ArtikelModel.php
+- Buat Artikel Model untuk memproses data Artikel. Buat file baru pada direktori `app/Models` dengan nama `ArtikelModel.php`
 <img src=Praktikum12/4.png>
 
 ## Step 3 Membuat Controller
-- Buat Controller baru dengan nama Artikel.php pada direktori app/Controllers
+- Buat Controller baru dengan nama `Artikel.php` pada direktori `app/Controllers`
 <img src=Praktikum12/5.png>
 
 ## Step 4 Membuat View
-- Buat direktori baru dengan nama artikel pada direktori app/views, kemudian buat file baru dengan nama index.php. 
+- Buat direktori baru dengan nama artikel pada direktori `app/views`, kemudian buat file baru dengan nama `index.php`. 
 <img src=Praktikum12/5.5.png>
 
-## Buka Lalu buka alamat http://localhost:8080/artikel untuk melihat hasilnya.
+## Buka Lalu buka alamat `http://localhost:8080/artikel` untuk melihat hasilnya.
 <img src=Praktikum12/6.png>
 - Tidak ada data yang ditampilkan karena database masih kosong.
 
@@ -137,26 +137,26 @@ sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layou
 <img src=Praktikum12/8.png>
 
 ## Step 6 Membuat Detail Artikel
-- Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berbeda. Tambahkan fungsi baru pada Controller Artikel dengan nama view()
+- Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berbeda. Tambahkan fungsi baru pada Controller Artikel dengan nama `view()`
 <img src=Praktikum12/9.png>
 
 ## Step 7 Membuat View Detail
-- Buat view baru untuk halaman detail dengan nama app/views/artikel/detail.php
+- Buat view baru untuk halaman detail dengan nama `app/views/artikel/detail.php`
 <img src=Praktikum12/10.png>
 
 ## Step 8 Membuat Route
-- Buka Kembali file app/config/Routes.php, kemudian tambahkan routing untuk artikel detail.
+- Buka Kembali file `app/config/Routes.php`, kemudian tambahkan routing untuk artikel detail.
 <img src=Praktikum12/11.png>
 
-- Akses lagi http://localhost:8080/artikel dan klik salah satu artikel, hasilnya akan menjadi seperti ini.
+- Akses lagi `http://localhost:8080/artikel` dan klik salah satu artikel, hasilnya akan menjadi seperti ini.
 <img src=Praktikum12/12.png>
 
 ## Step 9 Membuat Admin Menu
-- Menu admin adalah untuk proses CRUD data artikel. Buat method baru pada Controller Artikel dengan nama admin_index().
+- Menu admin adalah untuk proses CRUD data artikel. Buat method baru pada Controller Artikel dengan nama `admin_index()`.
 <img src=Praktikum12/13.png>
 
 ## Step 10 Membuat Tampilan Admin
-- Selanjutnya buat view untuk tampilan admin dengan nama admin_index.php
+- Selanjutnya buat view untuk tampilan admin dengan nama `admin_index.php`
 <img src=Praktikum12/14.png>
 <img src=Praktikum12/15.png>
 
@@ -164,34 +164,34 @@ sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layou
 <img src=Praktikum12/16.png>
 
 ## Step 12 Mengakses Menu Admin
-- Menu admin dapat diakses dengan alamat http://localhost:8080/admin/artikel
+- Menu admin dapat diakses dengan alamat `http://localhost:8080/admin/artikel`
 <img src=Praktikum12/17.png>
 
 ## Step 13 Menambah Menu Add Artikel
-- Tambahkan fungsi/method baru pada Controller Artikel dengan nama add(). 
+- Tambahkan fungsi/method baru pada Controller Artikel dengan nama `add()`.
 <img src=Praktikum12/18.png>
-- Kemudian buat view untuk form tambah dengan nama form_add.php
+- Kemudian buat view untuk form tambah dengan nama `form_add.php`
 <img src=Praktikum12/18.5.png>
 - Tampilannya seperti berikut
 <img src=Praktikum12/19.png>
 
 ## Step 14 Menambah Menu Edit Artikel
-- Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit(). 
+- Tambahkan fungsi/method baru pada Controller Artikel dengan nama `edit()`. 
 <img src=Praktikum12/19.5.png>
-- Kemudian buat view untuk form tambah dengan nama form_edit.php
+- Kemudian buat view untuk form tambah dengan nama `form_edit.php`
 <img src=Praktikum12/19.5.1.png>
 - Tampilannya seperti berikut
 <img src=Praktikum12/20.png>
 
 ## Step 15 Menambah Menu Delete Artikel
-- Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete().
+- Tambahkan fungsi/method baru pada Controller Artikel dengan nama `delete()`.
 <img src=Praktikum12/21.png>
 
 
 # Pertanyaan dan Tugas
 - Selesaikan programnya sesuai Langkah-langkah yang ada. Anda boleh melakukan improvisasi.
 
-## Saya Sudah Melengkapi file admin_header.php dan admin_footer.php serta CSSnya agar programnya bisa di run.
+## Saya Sudah Melengkapi file `admin_header.php` dan `admin_footer.php` serta `CSS`nya agar programnya bisa di run.
 
 
 - Admin_header.php
@@ -222,3 +222,11 @@ sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layou
 <img src=Praktikum12/q8.png>
 <img src=Praktikum12/q9.png>
 - Artikel berhasil di edit
+
+```
+
+Nama  : Ario Fajar
+Kelas : TI.19.A2
+NIM   : 311910610
+
+````
