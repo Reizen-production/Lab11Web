@@ -232,7 +232,7 @@ sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layou
 
 ## Step 2
 - Membuat Model User dengan nama `UserModel.php` seperti berikut
-<img src=Praktikum13/0.png>
+<img src=Praktikum13/1.5.png>
 
 ## Step 3
 - Membuat Control User dengan nama `User.php` , dan tambahkan method `index()` untuk menampilkan daftar user,
