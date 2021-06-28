@@ -223,6 +223,68 @@ sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layou
 <img src=Praktikum12/q9.png>
 - Artikel berhasil di edit
 
+
+# PRAKTIKUM 13 `Pemrograman Web (Framework Lanjutan - Modul Login)`
+
+## Step 1
+- Persiapkan data untuk menu login di `phpmyadmin` dan buat tabel berikut :
+<img src=Praktikum13/1.png>
+
+## Step 2
+- Membuat Model User dengan nama `UserModel.php` seperti berikut
+<img src=Praktikum13/0.png>
+
+## Step 3
+- Membuat Control User dengan nama `User.php` , dan tambahkan method `index()` untuk menampilkan daftar user,
+dan method `login()` untuk proses login.
+<img src=Praktikum13/2.png>
+<img src=Praktikum13/2.5.png>
+
+## Step 4
+- Membuat View Login, kita buat file baru di `view/user` kemudian buat `login.php`
+<img src=Praktikum13/3.png>
+
+## Step 5
+- Membuat Database Seeder,  Buka CLI, kemudian tulis perintah berikut: `php spark make:seeder UserSeeder`. ini digunakan untuk mencoba module login kita perlu memasukkan data user dan password ke dalam database. Untuk itu buat database seeder untuk tabel user.
+<img src=Praktikum13/4.png>
+- Buka file UserSeeder.php yang berada di lokasi direktori `/app/Database/Seeds/UserSeeder.php` kemudian ikuti source code berikut:
+<img src=Praktikum13/5.png>
+- Buka CLI lagi dan ketik perintah : `php spark db:seed UserSeeder`
+<img src=Praktikum13/6.png>
+- Kemudian lakukan uji coba login dengan mengakses url : `http://localhost:8080/user/login`
+<img src=Praktikum13/7.png>
+
+
+## Step 6
+- Buat file baru dengan nama Auth.php pada direktori `app/Filters` untuk memfilter halaman admin.
+<img src=Praktikum13/8.png>
+- Kemudian buka file `app/Config/Filters.php` tambahkan kode berikut:
+<img src=Praktikum13/9.png>
+- Lalu buka file `app/Config/Routes.php` dan sesuaikan kodenya seperti ini.
+<img src=Praktikum13/10.png>
+- Maka ketika mengakses alamat `http://localhost:8080/admin/artikel` akan dibawa ke halaman login.
+<img src=Praktikum13/11.png>
+- Hasil setelah login
+<img src=Praktikum13/12.png>
+
+## Step 7
+- Membuat fungsi `logout`
+<img src=Praktikum13/13.png>
+<img src=Praktikum13/14.png>
+- Hasil setelah menekan tombol log out
+<img src=Praktikum13/15.png>
+
+
+# Pertanyaan dan Tugas
+
+## Selesaikan programnya sesuai Langkah-langkah yang ada. Anda boleh melakukan improvisasi.
+- Program sudah saya selesaikan dari awal login hingga log out halaman admin, beserta css nya.
+- `Route Log out`
+<img src=Praktikum13/p1.png>
+- `CSS`
+<img src=Praktikum13/p2.png>
+
+
 ```
 
 Nama  : Ario Fajar
