@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    line-height:1;
+    font-size:100%;
+    font-family:'Open Sans', sans-serif;
+    color:#5a5a5a;
+}
+
+#login-wrapper {
+    align-items: center;
+    width: 500px;
+    margin: 10px;
+    margin-left: 30%;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: 0 0 1em #ffd20c;
+}
+
+/* ISI */
+h1{
+    margin-bottom: 20px;
+}
+
+.form-control{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccccc;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+button[type=submit]{
+    padding: 7px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(243, 196, 96);
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+button[type=submit]:active,
+button[type=submit]:hover{
+    opacity: 75%;
+}
