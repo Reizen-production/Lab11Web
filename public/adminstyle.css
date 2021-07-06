@@ -22,11 +22,15 @@ header h1 {
     margin: 20px 10px;
     color: #bb3b3b;
 }
-
+img.header-image {
+    opacity: 0.5;
+    float: left;
+}
 /* navigasi */
-nav {
+navbar {
     display: block;
     background-color: #bb3b3b;
+    clear: left;
 }
 nav a {
     padding: 15px 30px;
@@ -78,7 +82,15 @@ table tr {
 tr:hover{
     background: #e7e7e7;
 }
-
+.pembuat{
+    position: fixed;
+    font-size: 60px;
+    color: #000000;
+    top: 260px;
+    left: 520px;
+    opacity: 0.1;
+    -webkit-transform: rotate(-40deg);
+}
 /* ADMIN TOMBOL */
 .btn{
     font-size: 14px;
@@ -123,22 +135,86 @@ input[type=text]{
     font-size: 15px;
     margin: 20px;   
 }
-
-input[type=submit]{
+.btn-large{
     padding: 10px;
-    background-color: rgb(30, 117, 216);
+    background-color: rgb(216, 30, 30);
     color: white;
     box-sizing: border-box;
     font-size: 15px;
     margin: 20px;   
 }
 
-input[type=submit]:active,
-input[type=submit]:hover{
+.btn-large:active,
+.btn-large:hover{
     opacity: 80%;
 }
 
 h2{
     margin-top: 20px;
     margin-left: 20px;
+}
+/*PAGING*/
+.pagination {
+    display: inline-block;
+    padding-left: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .25rem;
+}
+  
+.pagination > li {
+    display: inline;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    position: relative;
+    float: left;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.5;
+    color: rgb(231, 87, 87);
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #bb3b3b;
+    border-color: #bb3b3b;
+}
+
+/* SEARCH */
+.form-search input[type=text]{
+    width: 27%;
+    border: 2px solid gray;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin: 30px;
+    margin-bottom: 10px;
+}
+
+.btn-primary{
+    background-color: rgb(214, 62, 62);
+    color: white;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin: auto;   
+}
+
+.btn-primary:active,
+.btn-primary:hover{
+    opacity: 80%;
+}
+
+/* INPUT GAMBAR */
+input[type=file]{
+    margin: 20px;
 }
