@@ -285,6 +285,53 @@ dan method `login()` untuk proses login.
 <img src=Praktikum13/p2.png>
 
 
+
+# PRAKTIKUM 14
+
+
+## STEP 1
+- Membuat Pagination
+Pagination merupakan proses yang digunakan untuk membatasi tampilan yang panjang 
+dari data yang banyak pada sebuah website. Fungsi pagination adalah memecah 
+tampilan menjadi beberapa halaman tergantung banyaknya data yang akan ditampilkan 
+pada setiap halaman. Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi 
+kode pada method admin_index seperti berikut.
+<img src=Praktikum14/1.png>
+- Kemudian buka file views/artikel/admin_index.php dan tambahkan kode berikut
+dibawah deklarasi tabel data.
+<img src=Praktikum14/2.png>
+- Selanjutnya buka kembali menu daftar artikel, tambahkan data lagi untuk melihat 
+hasilnya.
+<img src=Praktikum14/3.png>
+
+
+## STEP 2
+- Membuat Pencarian
+Pencarian data digunakan untuk memfilter data.
+Untuk membuat pencarian data, buka kembali Controller Artikel, pada method 
+admin_index ubah kodenya seperti berikut ;
+<img src=Praktikum14/4.png>
+- Kemudian buka kembali file views/artikel/admin_index.php dan tambahkan form 
+pencarian sebelum deklarasi tabel seperti berikut:
+<img src=Praktikum14/4.5.png>
+- Dan ubah link pager menjadi `<?= $pager->only(['q'])->links(); ?>`
+- Selanjutnya buka kembali halaman admin artikel dan masukkan kata kunci tertentu pada form pencarian.
+<img src=Praktikum14/5.png>
+
+
+## STEP 3
+- Upload Gambar
+Menambahkan fungsi unggah gambar pada tambah artikel. Buka kembali Controller 
+Artikel, sesuaikan kode pada method add seperti berikut:
+<img src=Praktikum14/6.png>
+- Kemudian pada file views/artikel/form_add.php tambahkan field input file seperti 
+berikut.
+<img src=Praktikum14/7.png>
+- Kemudian lakukan percobaan membuat artikel dengan mengupload sebuah gambar.
+<img src=Praktikum14/8.png>
+- Hasil yang telah di upload
+<img src=Praktikum14/9.png>
+
 ```
 
 Nama  : Ario Fajar
